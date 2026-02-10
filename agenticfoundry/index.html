@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgenticFoundry | Open Agentic Ecosystem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.7/dist/build/static/js/bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #030712;
+      color: #f9fafb;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .glass {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .text-gradient {
+      background: linear-gradient(to right, #818cf8, #c084fc, #fb7185);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .bg-grid {
+      background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(99, 102, 241, 0.3);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(99, 102, 241, 0.5);
+    }
+
+    /* Animation Definitions */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-in {
+      animation-fill-mode: both;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-out;
+    }
+    .fade-in { animation-name: fadeIn; }
+    .slide-in-from-bottom-4 { animation-name: slideInUp; }
+    .slide-in-from-bottom-6 { animation-name: slideInUp; animation-delay: 0.1s; }
+    .slide-in-from-bottom-8 { animation-name: slideInUp; animation-delay: 0.2s; }
+    .slide-in-from-bottom-10 { animation-name: slideInUp; animation-delay: 0.3s; }
+    
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-500 { animation-delay: 0.5s; }
+    .duration-700 { animation-duration: 0.7s; }
+    .duration-1000 { animation-duration: 1s; }
+
+    /* Langflow component overrides */
+    langflow-chat {
+      --primary-color: #6366f1;
+      height: 100% !important;
+      width: 100% !important;
+      display: block !important;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
